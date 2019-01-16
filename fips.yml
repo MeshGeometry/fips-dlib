@@ -1,0 +1,8 @@
+#
+# fips-dlib
+#
+---
+exports:
+    header-dirs: 
+      - dlib
+
