@@ -9,7 +9,7 @@ endif()
 if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS_OSX_USE_ARC OR FIPS_UWP))
 
 # not sure about this
-add_subdirectory(dlib)
+add_subdirectory(dlib/dlib)
 
 endif()
 
