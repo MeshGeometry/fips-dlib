@@ -6,9 +6,10 @@ if (NOT FIPS_IMPORT)
     fips_project(fips-dlib)
 endif()
 
-if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS_OSX_USE_ARC OR FIPS_UWP))
+if ((FIPS_MACOS OR FIPS_WINDOWS OR FIPS_LINUX) AND NOT (FIPS_RASPBERRYPI OR FIPS_UWP))
 
 # not sure about this
+set(DLIB_NO_GUI_SUPPORT ON)
 add_subdirectory(dlib/dlib)
 
 endif()
